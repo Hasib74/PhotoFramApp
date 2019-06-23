@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_sheet_corner_radius">15</dimen>
+    <dimen name="bottom_sheet_top_padding">15</dimen>
+    <dimen name="item_offset">10</dimen>
+</resources>

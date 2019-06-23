@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:id="@+id/top"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tuliskan namamu"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/top"
+        android:layout_width="300dp"
+        android:layout_height="300dp">
+        <RelativeLayout
+            android:id="@+id/image_plate"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/edit_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <ImageView
+                android:id="@+id/frame"
+                android:src="@drawable/fram_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:autoLink="phone"
+
+                android:id="@+id/box_text"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="180dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="58dp"
+                android:text=""
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textIsSelectable="false"
+                android:background="@null"
+
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginBottom="55dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape_edit_name"
+        android:layout_alignParentBottom="true"
+        android:layout_width="200dp"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/name_box"
+            android:layout_centerInParent="true"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="Tulis disini"
+            android:textColorHint="@color/colorEditText"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:backgroundTint="#585151"
+            android:focusable="true"
+            android:textColor="@color/colorAss"
+            android:textCursorDrawable="@drawable/edit_text_cursor"
+            android:scrollHorizontally="true"
+            android:inputType="text"
+            android:minEms="1"
+            android:maxEms="14"
+
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/change_color_and_fonts"
+        android:layout_centerHorizontal="true"
+         android:layout_alignParentBottom="true"
+
+        android:text="Change Color And Fonts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        />
+
+
+</RelativeLayout>

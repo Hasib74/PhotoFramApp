@@ -1,0 +1,125 @@
+<!--
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <corners
+        android:bottomLeftRadius="30dp"
+        android:bottomRightRadius="30dp"
+        android:radius="60dp"
+        android:topLeftRadius="30dp"
+        android:topRightRadius="30dp" />
+
+    <solid android:color="#FFFEFE" />
+
+    <padding
+        android:bottom="0dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp" />
+
+    <size
+        android:height="60dp"
+        android:width="270dp" />
+
+</shape>-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <layer-list>
+            <!-- SHADOW -->
+            <item>
+                <shape>
+                    <solid android:color="#C7C3C3"/>
+                    <!-- alttan gölge -->
+                    <corners android:radius="50dp"/>
+                </shape>
+            </item>
+            <!-- BUTTON alttan gölge
+              android:right="5px" to make it round-->
+            <item
+                android:bottom="4px"
+                >
+                <shape>
+                    <solid android:color="#FDFCFC" />
+                    <size
+                        android:height="60dp"
+                        android:width="270dp" />
+                    <padding android:bottom="5dp"/>
+                    <corners
+                        android:bottomLeftRadius="30dp"
+                        android:bottomRightRadius="30dp"
+                        android:radius="60dp"
+                        android:topLeftRadius="30dp"
+                        android:topRightRadius="30dp" />
+
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_pressed="true">
+        <layer-list>
+            <!-- SHADOW -->
+            <item>
+                <shape>
+                    <solid android:color="#B3A2A2"/>
+                    <!-- alttan gölge -->
+                    <corners android:radius="59dp"/>
+                </shape>
+            </item>
+            <!-- BUTTON alttan gölge
+              android:right="5px" to make it round-->
+            <item
+                android:bottom="0px"
+                >
+                <shape>
+                    <solid android:color="#FCFCFC" />
+                    <size
+                        android:height="60dp"
+                        android:width="270dp" />
+                    <padding android:bottom="5dp"/>
+                    <corners
+                        android:bottomLeftRadius="30dp"
+                        android:bottomRightRadius="30dp"
+                        android:radius="60dp"
+                        android:topLeftRadius="30dp"
+                        android:topRightRadius="30dp" />
+
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_focused="true">
+        <layer-list>
+            <!-- SHADOW -->
+            <item>
+                <shape>
+                    <solid android:color="#B3A2A2"/>
+                    <!-- alttan gölge -->
+                    <corners android:radius="59dp"/>
+                </shape>
+            </item>
+            <!-- BUTTON alttan gölge
+              android:right="5px" to make it round-->
+            <item
+                android:bottom="0px"
+                >
+                <shape>
+                    <solid android:color="#FCF8F8" />
+                    <size
+                        android:height="60dp"
+                        android:width="270dp" />
+                    <padding android:bottom="5dp"/>
+                    <corners
+                        android:bottomLeftRadius="30dp"
+                        android:bottomRightRadius="30dp"
+                        android:radius="60dp"
+                        android:topLeftRadius="30dp"
+                        android:topRightRadius="30dp" />
+
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>
